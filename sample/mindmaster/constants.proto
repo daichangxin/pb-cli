@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package game.mindmaster;
+option go_package = "gitlab.innotechx.com/shm/interface/golang/game/mindmaster";
+
+// CMD 请求协议编号
+enum CMD {
+    // CMD_UNDEFINED 未知协议编号
+    CMD_UNDEFINED = 0;
+    // CMD_USER_BASE_INFO 进入游戏拉取用户基础数据信息(道具/体力/当前第几关等)
+    CMD_USER_BASE_INFO = 10001;
+    // CMD_USER_INFO_CHANGED 用户数据变更
+    CMD_USER_INFO_CHANGED = 10002;
+    // CMD_ROTARY_DIAL_REWARD 请求转盘抽奖
+    CMD_ROTARY_DIAL_REWARD = 20001;
+    // CMD_RANK_INFO 世界排行
+    CMD_RANK_INFO = 30001;
+    // CMD_START_CHALLANGE 请求开始/重新挑战关卡
+    CMD_START_CHALLANGE = 40001;
+    // CMD_VIDEO_RELIVE 看视频请求答题复活
+    CMD_VIDEO_RELIVE = 40002;
+    // CMD_ANSWER_SUBMIT 提交答案
+    CMD_ANSWER_SUBMIT = 40003;
+    // CMD_VIDEO_GIVEUP_RELIVE 放弃复活请求
+    CMD_VIDEO_GIVEUP_RELIVE = 40004;
+    // CMD_MIAOCOIN_EXCHANGE 喵币兑换
+    CMD_MIAOCOIN_EXCHANGE = 50001;
+    // CMD_VIDEO_RECOVERY 看视频恢复体力
+    CMD_VIDEO_RECOVERY = 60001;
+    // CMD_HEART_BEAT  请求心跳
+    CMD_HEART_BEAT = 89999;
+    // CMD_GLOBAL_ERROR 全局性错误协议
+    CMD_GLOBAL_ERROR = 99999;
+}
+
+// RankType 排行榜类型
+enum RankType {
+    // RANK_TYPE_UNDEFINED 未知类型
+    RANK_TYPE_UNDEFINED = 0;
+    // RANK_TYPE_WORLD  世界排行
+    RANK_TYPE_WORLD = 1;
+    // RANK_TYPE_FRIEND 好友排行
+    RANK_TYPE_FRIEND = 2;
+}
+

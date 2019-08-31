@@ -1,0 +1,76 @@
+syntax = "proto3";
+
+package game.mindmaster;
+option go_package = "gitlab.innotechx.com/shm/interface/golang/game/mindmaster";
+
+import "game/mindmaster/constants.proto";
+
+// RequestUserBaseInfo 用户基础信息拉取
+message RequestUserBaseInfo {
+}
+
+// RequestRotaryDialReward  转盘抽奖请求
+message RequestRotaryDialReward {
+}
+
+// RequestRankInfo 请求排行榜信息
+message RequestRankInfo {
+    // type 表示请求排行榜类型
+    RankType type = 1;
+}
+
+// RequestStartChallange 请求开始/重新挑战关卡
+message RequestStartChallange {
+    // screen 当前关卡数
+    int64 screen = 1;
+}
+
+// RequestVideoRelive 请求看视频复活
+message RequestVideoRelive {
+    // screen 请求看视频复活的关卡数
+    int64 screen = 1;
+}
+
+// QuestionAnswerItem 每道题验证答案所需数据
+message QuestionAnswerItem {
+    // id 题目id
+    int64 id = 1;
+    // time 答题剩余时间
+    int64 time = 2;
+    // answer 每道题所选答案
+    int64 option = 3;
+}
+
+// RequestAnswerSubmit 请求提交答案
+message RequestAnswerSubmit {
+    // screen 提交答案对应的关卡数
+    int64 screen = 1;
+    // answers 答案数组
+    repeated QuestionAnswerItem answers = 2;
+    // video 是否是视频翻倍
+    bool video = 3;
+}
+
+// RequestMiaoCoinExchange 喵币兑换请求
+message RequestMiaoCoinExchange {
+    // gold 要兑换的游戏币
+    int64 gold = 1;
+}
+
+// RequestHeartBeat 心跳请求
+message RequestHeartBeat {
+}
+
+// RequestVideoGiveUpRelive 放弃看视频复活
+message RequestVideoGiveUpRelive {
+    // screen 放弃复活关卡
+    int64 screen = 1;
+}
+
+// RequestVideoRecovery 看视频恢复体力请求
+message RequestVideoRecovery {
+}
+
+// RequestUserInfoChanged 用户数据变更请求
+message RequestUserInfoChanged {
+}
