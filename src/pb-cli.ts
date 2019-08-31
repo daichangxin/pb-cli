@@ -15,11 +15,6 @@ if (fs.existsSync(path.resolve('pb.config.js'))) {
 
 program
     .version('1.0.0', '-v, --version')
-    .command('init')
-    .description('初始化pb-cli配置')
-    .action(() => {
-        console.log('init');
-    });
 
 program
     .command('build <target>')

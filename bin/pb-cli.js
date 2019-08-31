@@ -47,12 +47,7 @@ if (fs.existsSync(path.resolve('pb.config.js'))) {
     config = require(path.resolve('pb.config.js'));
 }
 program
-    .version('1.0.0', '-v, --version')
-    .command('init')
-    .description('初始化pb-cli配置')
-    .action(function () {
-    console.log('init');
-});
+    .version('1.0.0', '-v, --version');
 program
     .command('build <target>')
     .description('构建proto js/ts文件')
