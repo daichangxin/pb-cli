@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "es6",
+    "target": "es5",
     "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "outDir": "bin"
-  }
+    "noImplicitAny": false,
+    "outDir": "bin",
+  },
+  "include": ["src"]
 }

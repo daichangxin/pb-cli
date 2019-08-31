@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "commander": "^3.0.1",
-    "protobufjs": "^6.8.8"
+    "glob": "^7.1.4",
+    "protobufjs": "^6.8.8",
+    "uglify-js": "^3.6.0"
   },
   "devDependencies": {},
   "scripts": {
