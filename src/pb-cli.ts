@@ -14,7 +14,7 @@ if (fs.existsSync(path.resolve('pb.config.js'))) {
 }
 
 program
-    .version('1.0.0', '-v, --version')
+    .version('1.0.2', '-v, --version')
 
 program
     .command('build <target>')
