@@ -22,13 +22,10 @@
     "type": "git",
     "url": "git+https://github.com/daichangxin/pb-cli.git"
   },
-  "author": "",
+  "author": "daichangxin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/daichangxin/pb-cli/issues"
   },
-  "homepage": "https://github.com/daichangxin/pb-cli#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@daichangxin"
-  }
+  "homepage": "https://github.com/daichangxin/pb-cli#readme"
 }

@@ -3,5 +3,6 @@
     "convert": false,
     "verify": false,
     "create": true,
-    "input": "../sample"
+    "input": "../sample",
+    "output": "../sample/output"
 }

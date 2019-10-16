@@ -19,7 +19,8 @@ pbts-cli build pbconfig.json   //pbconfig.json 编译配置文件
     "convert": false,
     "verify": false,
     "create": true,
-    "input": "../sample"
+    "input": "../sample",
+    "output": "../sample/output"
 }
 ```
 
