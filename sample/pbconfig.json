@@ -1,0 +1,7 @@
+{
+    "delimited": false,
+    "convert": false,
+    "verify": false,
+    "create": true,
+    "input": "../sample"
+}

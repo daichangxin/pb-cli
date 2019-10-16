@@ -1,12 +1,13 @@
 {
   "name": "pbts-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "导出pbjs和pbts文件",
   "main": "index.js",
   "bin": {
     "pbts-cli": "bin/pb-cli.js"
   },
   "dependencies": {
+    "@types/node": "^12.7.12",
     "commander": "^3.0.1",
     "glob": "^7.1.4",
     "protobufjs": "^6.8.8",
@@ -26,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/daichangxin/pb-cli/issues"
   },
-  "homepage": "https://github.com/daichangxin/pb-cli#readme"
+  "homepage": "https://github.com/daichangxin/pb-cli#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@daichangxin"
+  }
 }

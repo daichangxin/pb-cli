@@ -56,6 +56,18 @@ $root.doomsday_pt = (function() {
         ResData.prototype.param = $util.emptyArray;
 
         /**
+         * Creates a new ResData instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.ResData
+         * @static
+         * @param {doomsday_pt.IResData=} [properties] Properties to set
+         * @returns {doomsday_pt.ResData} ResData instance
+         */
+        ResData.create = function create(properties) {
+            return new ResData(properties);
+        };
+
+        /**
          * Encodes the specified ResData message. Does not implicitly {@link doomsday_pt.ResData.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.ResData
@@ -162,6 +174,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         DrawAward.prototype.award_num = 0;
+
+        /**
+         * Creates a new DrawAward instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.DrawAward
+         * @static
+         * @param {doomsday_pt.IDrawAward=} [properties] Properties to set
+         * @returns {doomsday_pt.DrawAward} DrawAward instance
+         */
+        DrawAward.create = function create(properties) {
+            return new DrawAward(properties);
+        };
 
         /**
          * Encodes the specified DrawAward message. Does not implicitly {@link doomsday_pt.DrawAward.verify|verify} messages.
@@ -276,6 +300,18 @@ $root.doomsday_pt = (function() {
         HeroExpMsg.prototype.exp = 0;
 
         /**
+         * Creates a new HeroExpMsg instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.HeroExpMsg
+         * @static
+         * @param {doomsday_pt.IHeroExpMsg=} [properties] Properties to set
+         * @returns {doomsday_pt.HeroExpMsg} HeroExpMsg instance
+         */
+        HeroExpMsg.create = function create(properties) {
+            return new HeroExpMsg(properties);
+        };
+
+        /**
          * Encodes the specified HeroExpMsg message. Does not implicitly {@link doomsday_pt.HeroExpMsg.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.HeroExpMsg
@@ -381,6 +417,18 @@ $root.doomsday_pt = (function() {
         BattleAward.prototype.hero_exp_msg = $util.emptyArray;
 
         /**
+         * Creates a new BattleAward instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.BattleAward
+         * @static
+         * @param {doomsday_pt.IBattleAward=} [properties] Properties to set
+         * @returns {doomsday_pt.BattleAward} BattleAward instance
+         */
+        BattleAward.create = function create(properties) {
+            return new BattleAward(properties);
+        };
+
+        /**
          * Encodes the specified BattleAward message. Does not implicitly {@link doomsday_pt.BattleAward.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.BattleAward
@@ -480,6 +528,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         GetGoods.prototype.number = 0;
+
+        /**
+         * Creates a new GetGoods instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.GetGoods
+         * @static
+         * @param {doomsday_pt.IGetGoods=} [properties] Properties to set
+         * @returns {doomsday_pt.GetGoods} GetGoods instance
+         */
+        GetGoods.create = function create(properties) {
+            return new GetGoods(properties);
+        };
 
         /**
          * Encodes the specified GetGoods message. Does not implicitly {@link doomsday_pt.GetGoods.verify|verify} messages.
@@ -588,6 +648,18 @@ $root.doomsday_pt = (function() {
         Cs_10000001.prototype.num = 0;
 
         /**
+         * Creates a new Cs_10000001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10000001
+         * @static
+         * @param {doomsday_pt.ICs_10000001=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10000001} Cs_10000001 instance
+         */
+        Cs_10000001.create = function create(properties) {
+            return new Cs_10000001(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10000001 message. Does not implicitly {@link doomsday_pt.Cs_10000001.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10000001
@@ -680,6 +752,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10000001.prototype.res = null;
+
+        /**
+         * Creates a new Sc_10000001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10000001
+         * @static
+         * @param {doomsday_pt.ISc_10000001=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10000001} Sc_10000001 instance
+         */
+        Sc_10000001.create = function create(properties) {
+            return new Sc_10000001(properties);
+        };
 
         /**
          * Encodes the specified Sc_10000001 message. Does not implicitly {@link doomsday_pt.Sc_10000001.verify|verify} messages.
@@ -780,6 +864,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Pt_HeroMsg.prototype.grade = 0;
+
+        /**
+         * Creates a new Pt_HeroMsg instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_HeroMsg
+         * @static
+         * @param {doomsday_pt.IPt_HeroMsg=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_HeroMsg} Pt_HeroMsg instance
+         */
+        Pt_HeroMsg.create = function create(properties) {
+            return new Pt_HeroMsg(properties);
+        };
 
         /**
          * Encodes the specified Pt_HeroMsg message. Does not implicitly {@link doomsday_pt.Pt_HeroMsg.verify|verify} messages.
@@ -947,6 +1043,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Pt_RoleInfo.prototype.hero_list = $util.emptyArray;
+
+        /**
+         * Creates a new Pt_RoleInfo instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_RoleInfo
+         * @static
+         * @param {doomsday_pt.IPt_RoleInfo=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_RoleInfo} Pt_RoleInfo instance
+         */
+        Pt_RoleInfo.create = function create(properties) {
+            return new Pt_RoleInfo(properties);
+        };
 
         /**
          * Encodes the specified Pt_RoleInfo message. Does not implicitly {@link doomsday_pt.Pt_RoleInfo.verify|verify} messages.
@@ -1126,6 +1234,18 @@ $root.doomsday_pt = (function() {
         Pt_Currency.prototype.fighting = 0;
 
         /**
+         * Creates a new Pt_Currency instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_Currency
+         * @static
+         * @param {doomsday_pt.IPt_Currency=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_Currency} Pt_Currency instance
+         */
+        Pt_Currency.create = function create(properties) {
+            return new Pt_Currency(properties);
+        };
+
+        /**
          * Encodes the specified Pt_Currency message. Does not implicitly {@link doomsday_pt.Pt_Currency.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Pt_Currency
@@ -1247,6 +1367,18 @@ $root.doomsday_pt = (function() {
         Cs_10010001.prototype.token = "";
 
         /**
+         * Creates a new Cs_10010001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10010001
+         * @static
+         * @param {doomsday_pt.ICs_10010001=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10010001} Cs_10010001 instance
+         */
+        Cs_10010001.create = function create(properties) {
+            return new Cs_10010001(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10010001 message. Does not implicitly {@link doomsday_pt.Cs_10010001.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10010001
@@ -1342,6 +1474,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10010001.prototype.role_info = null;
+
+        /**
+         * Creates a new Sc_10010001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10010001
+         * @static
+         * @param {doomsday_pt.ISc_10010001=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10010001} Sc_10010001 instance
+         */
+        Sc_10010001.create = function create(properties) {
+            return new Sc_10010001(properties);
+        };
 
         /**
          * Encodes the specified Sc_10010001 message. Does not implicitly {@link doomsday_pt.Sc_10010001.verify|verify} messages.
@@ -1458,6 +1602,18 @@ $root.doomsday_pt = (function() {
         Cs_10010002.prototype.hero_id = 0;
 
         /**
+         * Creates a new Cs_10010002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10010002
+         * @static
+         * @param {doomsday_pt.ICs_10010002=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10010002} Cs_10010002 instance
+         */
+        Cs_10010002.create = function create(properties) {
+            return new Cs_10010002(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10010002 message. Does not implicitly {@link doomsday_pt.Cs_10010002.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10010002
@@ -1558,6 +1714,18 @@ $root.doomsday_pt = (function() {
         Sc_10010002.prototype.res = null;
 
         /**
+         * Creates a new Sc_10010002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10010002
+         * @static
+         * @param {doomsday_pt.ISc_10010002=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10010002} Sc_10010002 instance
+         */
+        Sc_10010002.create = function create(properties) {
+            return new Sc_10010002(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10010002 message. Does not implicitly {@link doomsday_pt.Sc_10010002.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10010002
@@ -1640,6 +1808,18 @@ $root.doomsday_pt = (function() {
         Cs_10010003.prototype.rand = 0;
 
         /**
+         * Creates a new Cs_10010003 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10010003
+         * @static
+         * @param {doomsday_pt.ICs_10010003=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10010003} Cs_10010003 instance
+         */
+        Cs_10010003.create = function create(properties) {
+            return new Cs_10010003(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10010003 message. Does not implicitly {@link doomsday_pt.Cs_10010003.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10010003
@@ -1719,6 +1899,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10010003.prototype.interval = 0;
+
+        /**
+         * Creates a new Sc_10010003 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10010003
+         * @static
+         * @param {doomsday_pt.ISc_10010003=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10010003} Sc_10010003 instance
+         */
+        Sc_10010003.create = function create(properties) {
+            return new Sc_10010003(properties);
+        };
 
         /**
          * Encodes the specified Sc_10010003 message. Does not implicitly {@link doomsday_pt.Sc_10010003.verify|verify} messages.
@@ -1803,6 +1995,18 @@ $root.doomsday_pt = (function() {
         Sc_10010004.prototype.res = null;
 
         /**
+         * Creates a new Sc_10010004 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10010004
+         * @static
+         * @param {doomsday_pt.ISc_10010004=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10010004} Sc_10010004 instance
+         */
+        Sc_10010004.create = function create(properties) {
+            return new Sc_10010004(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10010004 message. Does not implicitly {@link doomsday_pt.Sc_10010004.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10010004
@@ -1883,6 +2087,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10010005.prototype.currency = null;
+
+        /**
+         * Creates a new Sc_10010005 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10010005
+         * @static
+         * @param {doomsday_pt.ISc_10010005=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10010005} Sc_10010005 instance
+         */
+        Sc_10010005.create = function create(properties) {
+            return new Sc_10010005(properties);
+        };
 
         /**
          * Encodes the specified Sc_10010005 message. Does not implicitly {@link doomsday_pt.Sc_10010005.verify|verify} messages.
@@ -1974,6 +2190,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Pt_AttList.prototype.att_value = 0;
+
+        /**
+         * Creates a new Pt_AttList instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_AttList
+         * @static
+         * @param {doomsday_pt.IPt_AttList=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_AttList} Pt_AttList instance
+         */
+        Pt_AttList.create = function create(properties) {
+            return new Pt_AttList(properties);
+        };
 
         /**
          * Encodes the specified Pt_AttList message. Does not implicitly {@link doomsday_pt.Pt_AttList.verify|verify} messages.
@@ -2071,6 +2299,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Pt_HeroPanel.prototype.heroname = "";
+
+        /**
+         * Creates a new Pt_HeroPanel instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_HeroPanel
+         * @static
+         * @param {doomsday_pt.IPt_HeroPanel=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_HeroPanel} Pt_HeroPanel instance
+         */
+        Pt_HeroPanel.create = function create(properties) {
+            return new Pt_HeroPanel(properties);
+        };
 
         /**
          * Encodes the specified Pt_HeroPanel message. Does not implicitly {@link doomsday_pt.Pt_HeroPanel.verify|verify} messages.
@@ -2197,6 +2437,18 @@ $root.doomsday_pt = (function() {
         Pt_HeroInfo.prototype.grade = 0;
 
         /**
+         * Creates a new Pt_HeroInfo instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_HeroInfo
+         * @static
+         * @param {doomsday_pt.IPt_HeroInfo=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_HeroInfo} Pt_HeroInfo instance
+         */
+        Pt_HeroInfo.create = function create(properties) {
+            return new Pt_HeroInfo(properties);
+        };
+
+        /**
          * Encodes the specified Pt_HeroInfo message. Does not implicitly {@link doomsday_pt.Pt_HeroInfo.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Pt_HeroInfo
@@ -2303,6 +2555,18 @@ $root.doomsday_pt = (function() {
         Cs_10020001.prototype.hero_id = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
 
         /**
+         * Creates a new Cs_10020001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10020001
+         * @static
+         * @param {doomsday_pt.ICs_10020001=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10020001} Cs_10020001 instance
+         */
+        Cs_10020001.create = function create(properties) {
+            return new Cs_10020001(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10020001 message. Does not implicitly {@link doomsday_pt.Cs_10020001.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10020001
@@ -2384,6 +2648,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10020001.prototype.att_list = $util.emptyArray;
+
+        /**
+         * Creates a new Sc_10020001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10020001
+         * @static
+         * @param {doomsday_pt.ISc_10020001=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10020001} Sc_10020001 instance
+         */
+        Sc_10020001.create = function create(properties) {
+            return new Sc_10020001(properties);
+        };
 
         /**
          * Encodes the specified Sc_10020001 message. Does not implicitly {@link doomsday_pt.Sc_10020001.verify|verify} messages.
@@ -2468,6 +2744,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Cs_10020002.prototype.hero_id = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
+
+        /**
+         * Creates a new Cs_10020002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10020002
+         * @static
+         * @param {doomsday_pt.ICs_10020002=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10020002} Cs_10020002 instance
+         */
+        Cs_10020002.create = function create(properties) {
+            return new Cs_10020002(properties);
+        };
 
         /**
          * Encodes the specified Cs_10020002 message. Does not implicitly {@link doomsday_pt.Cs_10020002.verify|verify} messages.
@@ -2562,6 +2850,18 @@ $root.doomsday_pt = (function() {
         Sc_10020002.prototype.att_list = $util.emptyArray;
 
         /**
+         * Creates a new Sc_10020002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10020002
+         * @static
+         * @param {doomsday_pt.ISc_10020002=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10020002} Sc_10020002 instance
+         */
+        Sc_10020002.create = function create(properties) {
+            return new Sc_10020002(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10020002 message. Does not implicitly {@link doomsday_pt.Sc_10020002.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10020002
@@ -2650,6 +2950,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Cs_10020003.prototype.rand = 0;
+
+        /**
+         * Creates a new Cs_10020003 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10020003
+         * @static
+         * @param {doomsday_pt.ICs_10020003=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10020003} Cs_10020003 instance
+         */
+        Cs_10020003.create = function create(properties) {
+            return new Cs_10020003(properties);
+        };
 
         /**
          * Encodes the specified Cs_10020003 message. Does not implicitly {@link doomsday_pt.Cs_10020003.verify|verify} messages.
@@ -2743,6 +3055,18 @@ $root.doomsday_pt = (function() {
         Sc_10020003.prototype.hero_list = $util.emptyArray;
 
         /**
+         * Creates a new Sc_10020003 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10020003
+         * @static
+         * @param {doomsday_pt.ISc_10020003=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10020003} Sc_10020003 instance
+         */
+        Sc_10020003.create = function create(properties) {
+            return new Sc_10020003(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10020003 message. Does not implicitly {@link doomsday_pt.Sc_10020003.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10020003
@@ -2831,6 +3155,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Cs_10020004.prototype.hero_id = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
+
+        /**
+         * Creates a new Cs_10020004 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10020004
+         * @static
+         * @param {doomsday_pt.ICs_10020004=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10020004} Cs_10020004 instance
+         */
+        Cs_10020004.create = function create(properties) {
+            return new Cs_10020004(properties);
+        };
 
         /**
          * Encodes the specified Cs_10020004 message. Does not implicitly {@link doomsday_pt.Cs_10020004.verify|verify} messages.
@@ -2922,6 +3258,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10020004.prototype.hero_info = null;
+
+        /**
+         * Creates a new Sc_10020004 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10020004
+         * @static
+         * @param {doomsday_pt.ISc_10020004=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10020004} Sc_10020004 instance
+         */
+        Sc_10020004.create = function create(properties) {
+            return new Sc_10020004(properties);
+        };
 
         /**
          * Encodes the specified Sc_10020004 message. Does not implicitly {@link doomsday_pt.Sc_10020004.verify|verify} messages.
@@ -3037,6 +3385,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Pt_GoodsMsg.prototype.valid_time = 0;
+
+        /**
+         * Creates a new Pt_GoodsMsg instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_GoodsMsg
+         * @static
+         * @param {doomsday_pt.IPt_GoodsMsg=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_GoodsMsg} Pt_GoodsMsg instance
+         */
+        Pt_GoodsMsg.create = function create(properties) {
+            return new Pt_GoodsMsg(properties);
+        };
 
         /**
          * Encodes the specified Pt_GoodsMsg message. Does not implicitly {@link doomsday_pt.Pt_GoodsMsg.verify|verify} messages.
@@ -3158,6 +3518,18 @@ $root.doomsday_pt = (function() {
         Sc_10030001.prototype.entrepot_msg = $util.emptyArray;
 
         /**
+         * Creates a new Sc_10030001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10030001
+         * @static
+         * @param {doomsday_pt.ISc_10030001=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10030001} Sc_10030001 instance
+         */
+        Sc_10030001.create = function create(properties) {
+            return new Sc_10030001(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10030001 message. Does not implicitly {@link doomsday_pt.Sc_10030001.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10030001
@@ -3266,6 +3638,18 @@ $root.doomsday_pt = (function() {
         Sc_10030002.prototype.goods_msg = $util.emptyArray;
 
         /**
+         * Creates a new Sc_10030002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10030002
+         * @static
+         * @param {doomsday_pt.ISc_10030002=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10030002} Sc_10030002 instance
+         */
+        Sc_10030002.create = function create(properties) {
+            return new Sc_10030002(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10030002 message. Does not implicitly {@link doomsday_pt.Sc_10030002.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10030002
@@ -3365,6 +3749,18 @@ $root.doomsday_pt = (function() {
         Cs_10030003.prototype.num = 0;
 
         /**
+         * Creates a new Cs_10030003 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10030003
+         * @static
+         * @param {doomsday_pt.ICs_10030003=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10030003} Cs_10030003 instance
+         */
+        Cs_10030003.create = function create(properties) {
+            return new Cs_10030003(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10030003 message. Does not implicitly {@link doomsday_pt.Cs_10030003.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10030003
@@ -3453,6 +3849,18 @@ $root.doomsday_pt = (function() {
         Sc_10030003.prototype.res = null;
 
         /**
+         * Creates a new Sc_10030003 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10030003
+         * @static
+         * @param {doomsday_pt.ISc_10030003=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10030003} Sc_10030003 instance
+         */
+        Sc_10030003.create = function create(properties) {
+            return new Sc_10030003(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10030003 message. Does not implicitly {@link doomsday_pt.Sc_10030003.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10030003
@@ -3533,6 +3941,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Cs_10030004.prototype.id = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
+
+        /**
+         * Creates a new Cs_10030004 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10030004
+         * @static
+         * @param {doomsday_pt.ICs_10030004=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10030004} Cs_10030004 instance
+         */
+        Cs_10030004.create = function create(properties) {
+            return new Cs_10030004(properties);
+        };
 
         /**
          * Encodes the specified Cs_10030004 message. Does not implicitly {@link doomsday_pt.Cs_10030004.verify|verify} messages.
@@ -3617,6 +4037,18 @@ $root.doomsday_pt = (function() {
         Sc_10030004.prototype.res = null;
 
         /**
+         * Creates a new Sc_10030004 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10030004
+         * @static
+         * @param {doomsday_pt.ISc_10030004=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10030004} Sc_10030004 instance
+         */
+        Sc_10030004.create = function create(properties) {
+            return new Sc_10030004(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10030004 message. Does not implicitly {@link doomsday_pt.Sc_10030004.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10030004
@@ -3699,6 +4131,18 @@ $root.doomsday_pt = (function() {
         Cs_10030005.prototype.id = 0;
 
         /**
+         * Creates a new Cs_10030005 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10030005
+         * @static
+         * @param {doomsday_pt.ICs_10030005=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10030005} Cs_10030005 instance
+         */
+        Cs_10030005.create = function create(properties) {
+            return new Cs_10030005(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10030005 message. Does not implicitly {@link doomsday_pt.Cs_10030005.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10030005
@@ -3778,6 +4222,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10030005.prototype.res = null;
+
+        /**
+         * Creates a new Sc_10030005 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10030005
+         * @static
+         * @param {doomsday_pt.ISc_10030005=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10030005} Sc_10030005 instance
+         */
+        Sc_10030005.create = function create(properties) {
+            return new Sc_10030005(properties);
+        };
 
         /**
          * Encodes the specified Sc_10030005 message. Does not implicitly {@link doomsday_pt.Sc_10030005.verify|verify} messages.
@@ -3862,6 +4318,18 @@ $root.doomsday_pt = (function() {
         Cs_10030006.prototype.id = $util.Long ? $util.Long.fromBits(0,0,true) : 0;
 
         /**
+         * Creates a new Cs_10030006 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10030006
+         * @static
+         * @param {doomsday_pt.ICs_10030006=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10030006} Cs_10030006 instance
+         */
+        Cs_10030006.create = function create(properties) {
+            return new Cs_10030006(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10030006 message. Does not implicitly {@link doomsday_pt.Cs_10030006.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10030006
@@ -3942,6 +4410,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10030006.prototype.res = null;
+
+        /**
+         * Creates a new Sc_10030006 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10030006
+         * @static
+         * @param {doomsday_pt.ISc_10030006=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10030006} Sc_10030006 instance
+         */
+        Sc_10030006.create = function create(properties) {
+            return new Sc_10030006(properties);
+        };
 
         /**
          * Encodes the specified Sc_10030006 message. Does not implicitly {@link doomsday_pt.Sc_10030006.verify|verify} messages.
@@ -4044,6 +4524,18 @@ $root.doomsday_pt = (function() {
         Cs_10030007.prototype.select_id = 0;
 
         /**
+         * Creates a new Cs_10030007 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10030007
+         * @static
+         * @param {doomsday_pt.ICs_10030007=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10030007} Cs_10030007 instance
+         */
+        Cs_10030007.create = function create(properties) {
+            return new Cs_10030007(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10030007 message. Does not implicitly {@link doomsday_pt.Cs_10030007.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10030007
@@ -4137,6 +4629,18 @@ $root.doomsday_pt = (function() {
         Sc_10030007.prototype.res = null;
 
         /**
+         * Creates a new Sc_10030007 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10030007
+         * @static
+         * @param {doomsday_pt.ISc_10030007=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10030007} Sc_10030007 instance
+         */
+        Sc_10030007.create = function create(properties) {
+            return new Sc_10030007(properties);
+        };
+
+        /**
          * Encodes the specified Sc_10030007 message. Does not implicitly {@link doomsday_pt.Sc_10030007.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Sc_10030007
@@ -4228,6 +4732,18 @@ $root.doomsday_pt = (function() {
         Pt_Pos.prototype.y = 0;
 
         /**
+         * Creates a new Pt_Pos instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_Pos
+         * @static
+         * @param {doomsday_pt.IPt_Pos=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_Pos} Pt_Pos instance
+         */
+        Pt_Pos.create = function create(properties) {
+            return new Pt_Pos(properties);
+        };
+
+        /**
          * Encodes the specified Pt_Pos message. Does not implicitly {@link doomsday_pt.Pt_Pos.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Pt_Pos
@@ -4316,6 +4832,18 @@ $root.doomsday_pt = (function() {
         Cs_10040001.prototype.id = 0;
 
         /**
+         * Creates a new Cs_10040001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10040001
+         * @static
+         * @param {doomsday_pt.ICs_10040001=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10040001} Cs_10040001 instance
+         */
+        Cs_10040001.create = function create(properties) {
+            return new Cs_10040001(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10040001 message. Does not implicitly {@link doomsday_pt.Cs_10040001.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10040001
@@ -4397,6 +4925,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10040001.prototype.id_list = $util.emptyArray;
+
+        /**
+         * Creates a new Sc_10040001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10040001
+         * @static
+         * @param {doomsday_pt.ISc_10040001=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10040001} Sc_10040001 instance
+         */
+        Sc_10040001.create = function create(properties) {
+            return new Sc_10040001(properties);
+        };
 
         /**
          * Encodes the specified Sc_10040001 message. Does not implicitly {@link doomsday_pt.Sc_10040001.verify|verify} messages.
@@ -4497,6 +5037,18 @@ $root.doomsday_pt = (function() {
         Cs_10040002.prototype.tar_id = 0;
 
         /**
+         * Creates a new Cs_10040002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10040002
+         * @static
+         * @param {doomsday_pt.ICs_10040002=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10040002} Cs_10040002 instance
+         */
+        Cs_10040002.create = function create(properties) {
+            return new Cs_10040002(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10040002 message. Does not implicitly {@link doomsday_pt.Cs_10040002.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10040002
@@ -4583,6 +5135,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10040002.prototype.tar_pos = null;
+
+        /**
+         * Creates a new Sc_10040002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10040002
+         * @static
+         * @param {doomsday_pt.ISc_10040002=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10040002} Sc_10040002 instance
+         */
+        Sc_10040002.create = function create(properties) {
+            return new Sc_10040002(properties);
+        };
 
         /**
          * Encodes the specified Sc_10040002 message. Does not implicitly {@link doomsday_pt.Sc_10040002.verify|verify} messages.
@@ -4673,6 +5237,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Pt_GoodsList.prototype.goods_bought = 0;
+
+        /**
+         * Creates a new Pt_GoodsList instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_GoodsList
+         * @static
+         * @param {doomsday_pt.IPt_GoodsList=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_GoodsList} Pt_GoodsList instance
+         */
+        Pt_GoodsList.create = function create(properties) {
+            return new Pt_GoodsList(properties);
+        };
 
         /**
          * Encodes the specified Pt_GoodsList message. Does not implicitly {@link doomsday_pt.Pt_GoodsList.verify|verify} messages.
@@ -4772,6 +5348,18 @@ $root.doomsday_pt = (function() {
         Pt_Goodsfresh.prototype.goods_num = 0;
 
         /**
+         * Creates a new Pt_Goodsfresh instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Pt_Goodsfresh
+         * @static
+         * @param {doomsday_pt.IPt_Goodsfresh=} [properties] Properties to set
+         * @returns {doomsday_pt.Pt_Goodsfresh} Pt_Goodsfresh instance
+         */
+        Pt_Goodsfresh.create = function create(properties) {
+            return new Pt_Goodsfresh(properties);
+        };
+
+        /**
          * Encodes the specified Pt_Goodsfresh message. Does not implicitly {@link doomsday_pt.Pt_Goodsfresh.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Pt_Goodsfresh
@@ -4867,6 +5455,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Cs_10050001.prototype.shop_lv = 0;
+
+        /**
+         * Creates a new Cs_10050001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10050001
+         * @static
+         * @param {doomsday_pt.ICs_10050001=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10050001} Cs_10050001 instance
+         */
+        Cs_10050001.create = function create(properties) {
+            return new Cs_10050001(properties);
+        };
 
         /**
          * Encodes the specified Cs_10050001 message. Does not implicitly {@link doomsday_pt.Cs_10050001.verify|verify} messages.
@@ -4965,6 +5565,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10050001.prototype.goods_fresh = null;
+
+        /**
+         * Creates a new Sc_10050001 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10050001
+         * @static
+         * @param {doomsday_pt.ISc_10050001=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10050001} Sc_10050001 instance
+         */
+        Sc_10050001.create = function create(properties) {
+            return new Sc_10050001(properties);
+        };
 
         /**
          * Encodes the specified Sc_10050001 message. Does not implicitly {@link doomsday_pt.Sc_10050001.verify|verify} messages.
@@ -5075,6 +5687,18 @@ $root.doomsday_pt = (function() {
         Cs_10050002.prototype.goods_id = 0;
 
         /**
+         * Creates a new Cs_10050002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10050002
+         * @static
+         * @param {doomsday_pt.ICs_10050002=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10050002} Cs_10050002 instance
+         */
+        Cs_10050002.create = function create(properties) {
+            return new Cs_10050002(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10050002 message. Does not implicitly {@link doomsday_pt.Cs_10050002.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10050002
@@ -5176,6 +5800,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10050002.prototype.goods_list = null;
+
+        /**
+         * Creates a new Sc_10050002 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10050002
+         * @static
+         * @param {doomsday_pt.ISc_10050002=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10050002} Sc_10050002 instance
+         */
+        Sc_10050002.create = function create(properties) {
+            return new Sc_10050002(properties);
+        };
 
         /**
          * Encodes the specified Sc_10050002 message. Does not implicitly {@link doomsday_pt.Sc_10050002.verify|verify} messages.
@@ -5284,6 +5920,18 @@ $root.doomsday_pt = (function() {
         Cs_10050003.prototype.fresh_goodsid = 0;
 
         /**
+         * Creates a new Cs_10050003 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Cs_10050003
+         * @static
+         * @param {doomsday_pt.ICs_10050003=} [properties] Properties to set
+         * @returns {doomsday_pt.Cs_10050003} Cs_10050003 instance
+         */
+        Cs_10050003.create = function create(properties) {
+            return new Cs_10050003(properties);
+        };
+
+        /**
          * Encodes the specified Cs_10050003 message. Does not implicitly {@link doomsday_pt.Cs_10050003.verify|verify} messages.
          * @function encode
          * @memberof doomsday_pt.Cs_10050003
@@ -5386,6 +6034,18 @@ $root.doomsday_pt = (function() {
          * @instance
          */
         Sc_10050003.prototype.goods_list = $util.emptyArray;
+
+        /**
+         * Creates a new Sc_10050003 instance using the specified properties.
+         * @function create
+         * @memberof doomsday_pt.Sc_10050003
+         * @static
+         * @param {doomsday_pt.ISc_10050003=} [properties] Properties to set
+         * @returns {doomsday_pt.Sc_10050003} Sc_10050003 instance
+         */
+        Sc_10050003.create = function create(properties) {
+            return new Sc_10050003(properties);
+        };
 
         /**
          * Encodes the specified Sc_10050003 message. Does not implicitly {@link doomsday_pt.Sc_10050003.verify|verify} messages.

@@ -56,38 +56,64 @@ program
     build(target);
 });
 program.parse(process.argv);
+function resolve(name) {
+    return path.resolve(__dirname, name);
+}
 function build(target) {
     return __awaiter(this, void 0, void 0, function () {
-        var dir_output, file_bundleJs, file_bundleTs, files, jsContent, minjs, tsContent;
+        var pbConfig, delimited, convert, verify, create, input, output, args, file_bundleJs, file_bundleTs, files, jsContent, minjs, tsContent;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     console.log('build ' + target);
-                    dir_output = path.join(target, 'output');
-                    if (!fs.existsSync(dir_output)) {
-                        fs.mkdirSync(dir_output);
+                    try {
+                        pbConfig = require(target);
                     }
-                    file_bundleJs = path.join(dir_output, 'proto_bundle.js');
-                    file_bundleTs = path.join(dir_output, 'proto_bundle.d.ts');
-                    return [4 /*yield*/, findFiles(target, '**/*.proto')];
+                    catch (e) {
+                        pbConfig = {
+                            delimited: false,
+                            convert: false,
+                            verify: false,
+                            create: true,
+                        };
+                    }
+                    delimited = pbConfig.delimited, convert = pbConfig.convert, verify = pbConfig.verify, create = pbConfig.create, input = pbConfig.input, output = pbConfig.output;
+                    args = ['-t static', '--keep-case'];
+                    if (!delimited) {
+                        args.push('--no-delimited');
+                    }
+                    if (!convert) {
+                        args.push('--no-convert');
+                    }
+                    if (!verify) {
+                        args.push('--no-verify');
+                    }
+                    if (!create) {
+                        args.push('--no-create');
+                    }
+                    if (!input) {
+                        input = resolve(target);
+                        input = fs.statSync(input).isDirectory ? input : path.basename(input);
+                    }
+                    input = resolve(input);
+                    output || (output = path.join(input, 'output'));
+                    output = resolve(output);
+                    console.log('input:', input);
+                    console.log('output:', output);
+                    if (!fs.existsSync(output)) {
+                        fs.mkdirSync(output);
+                    }
+                    file_bundleJs = path.join(output, 'proto_bundle.js');
+                    file_bundleTs = path.join(output, 'proto_bundle.d.ts');
+                    return [4 /*yield*/, findFiles(input, '**/*.proto')];
                 case 1:
                     files = _a.sent();
                     console.log(files);
                     ////////////////////////////////////////// 生成js
-                    return [4 /*yield*/, exec('pbjs', [
-                            '--no-delimited',
-                            '--no-convert',
-                            '--no-verify',
-                            '--no-create',
-                            '-t static',
-                            // '-w es6', 会生成const等语法，导致uglify无法执行
-                            '--keep-case',
-                            '-p', target,
-                            files.join(' '),
-                            '-o', file_bundleJs
-                        ])];
+                    args.push('-p', input, files.join(' '));
+                    args.push('-o', file_bundleJs);
+                    return [4 /*yield*/, exec('pbjs', args)];
                 case 2:
-                    ////////////////////////////////////////// 生成js
                     _a.sent();
                     jsContent = '$protobuf=protobuf;' + fs.readFileSync(file_bundleJs, 'utf-8');
                     fs.writeFileSync(file_bundleJs, jsContent, 'utf-8');

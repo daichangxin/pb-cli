@@ -1,5 +1,4 @@
 type Long = protobuf.Long;
-// DO NOT EDIT! This is a generated file. Edit the JSDoc in src/*.js instead and run 'npm run types'.
 
 /** Namespace doomsday_pt. */
 declare namespace doomsday_pt {
@@ -28,6 +27,13 @@ declare namespace doomsday_pt {
 
         /** ResData param. */
         public param: string[];
+
+        /**
+         * Creates a new ResData instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns ResData instance
+         */
+        public static create(properties?: doomsday_pt.IResData): doomsday_pt.ResData;
 
         /**
          * Encodes the specified ResData message. Does not implicitly {@link doomsday_pt.ResData.verify|verify} messages.
@@ -80,6 +86,13 @@ declare namespace doomsday_pt {
         public award_num: number;
 
         /**
+         * Creates a new DrawAward instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns DrawAward instance
+         */
+        public static create(properties?: doomsday_pt.IDrawAward): doomsday_pt.DrawAward;
+
+        /**
          * Encodes the specified DrawAward message. Does not implicitly {@link doomsday_pt.DrawAward.verify|verify} messages.
          * @param message DrawAward message or plain object to encode
          * @param [writer] Writer to encode to
@@ -130,6 +143,13 @@ declare namespace doomsday_pt {
         public exp: number;
 
         /**
+         * Creates a new HeroExpMsg instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns HeroExpMsg instance
+         */
+        public static create(properties?: doomsday_pt.IHeroExpMsg): doomsday_pt.HeroExpMsg;
+
+        /**
          * Encodes the specified HeroExpMsg message. Does not implicitly {@link doomsday_pt.HeroExpMsg.verify|verify} messages.
          * @param message HeroExpMsg message or plain object to encode
          * @param [writer] Writer to encode to
@@ -174,6 +194,13 @@ declare namespace doomsday_pt {
         public hero_exp_msg: doomsday_pt.IHeroExpMsg[];
 
         /**
+         * Creates a new BattleAward instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns BattleAward instance
+         */
+        public static create(properties?: doomsday_pt.IBattleAward): doomsday_pt.BattleAward;
+
+        /**
          * Encodes the specified BattleAward message. Does not implicitly {@link doomsday_pt.BattleAward.verify|verify} messages.
          * @param message BattleAward message or plain object to encode
          * @param [writer] Writer to encode to
@@ -216,6 +243,13 @@ declare namespace doomsday_pt {
 
         /** GetGoods number. */
         public number: number;
+
+        /**
+         * Creates a new GetGoods instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns GetGoods instance
+         */
+        public static create(properties?: doomsday_pt.IGetGoods): doomsday_pt.GetGoods;
 
         /**
          * Encodes the specified GetGoods message. Does not implicitly {@link doomsday_pt.GetGoods.verify|verify} messages.
@@ -268,6 +302,13 @@ declare namespace doomsday_pt {
         public num: number;
 
         /**
+         * Creates a new Cs_10000001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10000001 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10000001): doomsday_pt.Cs_10000001;
+
+        /**
          * Encodes the specified Cs_10000001 message. Does not implicitly {@link doomsday_pt.Cs_10000001.verify|verify} messages.
          * @param message Cs_10000001 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -304,6 +345,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10000001 res. */
         public res: doomsday_pt.IResData;
+
+        /**
+         * Creates a new Sc_10000001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10000001 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10000001): doomsday_pt.Sc_10000001;
 
         /**
          * Encodes the specified Sc_10000001 message. Does not implicitly {@link doomsday_pt.Sc_10000001.verify|verify} messages.
@@ -354,6 +402,13 @@ declare namespace doomsday_pt {
 
         /** Pt_HeroMsg grade. */
         public grade: number;
+
+        /**
+         * Creates a new Pt_HeroMsg instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_HeroMsg instance
+         */
+        public static create(properties?: doomsday_pt.IPt_HeroMsg): doomsday_pt.Pt_HeroMsg;
 
         /**
          * Encodes the specified Pt_HeroMsg message. Does not implicitly {@link doomsday_pt.Pt_HeroMsg.verify|verify} messages.
@@ -442,6 +497,13 @@ declare namespace doomsday_pt {
         public hero_list: doomsday_pt.IPt_HeroMsg[];
 
         /**
+         * Creates a new Pt_RoleInfo instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_RoleInfo instance
+         */
+        public static create(properties?: doomsday_pt.IPt_RoleInfo): doomsday_pt.Pt_RoleInfo;
+
+        /**
          * Encodes the specified Pt_RoleInfo message. Does not implicitly {@link doomsday_pt.Pt_RoleInfo.verify|verify} messages.
          * @param message Pt_RoleInfo message or plain object to encode
          * @param [writer] Writer to encode to
@@ -510,6 +572,13 @@ declare namespace doomsday_pt {
         public fighting: number;
 
         /**
+         * Creates a new Pt_Currency instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_Currency instance
+         */
+        public static create(properties?: doomsday_pt.IPt_Currency): doomsday_pt.Pt_Currency;
+
+        /**
          * Encodes the specified Pt_Currency message. Does not implicitly {@link doomsday_pt.Pt_Currency.verify|verify} messages.
          * @param message Pt_Currency message or plain object to encode
          * @param [writer] Writer to encode to
@@ -554,6 +623,13 @@ declare namespace doomsday_pt {
         public token: string;
 
         /**
+         * Creates a new Cs_10010001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10010001 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10010001): doomsday_pt.Cs_10010001;
+
+        /**
          * Encodes the specified Cs_10010001 message. Does not implicitly {@link doomsday_pt.Cs_10010001.verify|verify} messages.
          * @param message Cs_10010001 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -596,6 +672,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10010001 role_info. */
         public role_info?: (doomsday_pt.IPt_RoleInfo|null);
+
+        /**
+         * Creates a new Sc_10010001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10010001 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10010001): doomsday_pt.Sc_10010001;
 
         /**
          * Encodes the specified Sc_10010001 message. Does not implicitly {@link doomsday_pt.Sc_10010001.verify|verify} messages.
@@ -654,6 +737,13 @@ declare namespace doomsday_pt {
         public hero_id: number;
 
         /**
+         * Creates a new Cs_10010002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10010002 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10010002): doomsday_pt.Cs_10010002;
+
+        /**
          * Encodes the specified Cs_10010002 message. Does not implicitly {@link doomsday_pt.Cs_10010002.verify|verify} messages.
          * @param message Cs_10010002 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -690,6 +780,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10010002 res. */
         public res: doomsday_pt.IResData;
+
+        /**
+         * Creates a new Sc_10010002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10010002 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10010002): doomsday_pt.Sc_10010002;
 
         /**
          * Encodes the specified Sc_10010002 message. Does not implicitly {@link doomsday_pt.Sc_10010002.verify|verify} messages.
@@ -730,6 +827,13 @@ declare namespace doomsday_pt {
         public rand: number;
 
         /**
+         * Creates a new Cs_10010003 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10010003 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10010003): doomsday_pt.Cs_10010003;
+
+        /**
          * Encodes the specified Cs_10010003 message. Does not implicitly {@link doomsday_pt.Cs_10010003.verify|verify} messages.
          * @param message Cs_10010003 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -766,6 +870,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10010003 interval. */
         public interval: number;
+
+        /**
+         * Creates a new Sc_10010003 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10010003 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10010003): doomsday_pt.Sc_10010003;
 
         /**
          * Encodes the specified Sc_10010003 message. Does not implicitly {@link doomsday_pt.Sc_10010003.verify|verify} messages.
@@ -806,6 +917,13 @@ declare namespace doomsday_pt {
         public res: doomsday_pt.IResData;
 
         /**
+         * Creates a new Sc_10010004 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10010004 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10010004): doomsday_pt.Sc_10010004;
+
+        /**
          * Encodes the specified Sc_10010004 message. Does not implicitly {@link doomsday_pt.Sc_10010004.verify|verify} messages.
          * @param message Sc_10010004 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -842,6 +960,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10010005 currency. */
         public currency: doomsday_pt.IPt_Currency;
+
+        /**
+         * Creates a new Sc_10010005 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10010005 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10010005): doomsday_pt.Sc_10010005;
 
         /**
          * Encodes the specified Sc_10010005 message. Does not implicitly {@link doomsday_pt.Sc_10010005.verify|verify} messages.
@@ -888,6 +1013,13 @@ declare namespace doomsday_pt {
         public att_value: number;
 
         /**
+         * Creates a new Pt_AttList instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_AttList instance
+         */
+        public static create(properties?: doomsday_pt.IPt_AttList): doomsday_pt.Pt_AttList;
+
+        /**
          * Encodes the specified Pt_AttList message. Does not implicitly {@link doomsday_pt.Pt_AttList.verify|verify} messages.
          * @param message Pt_AttList message or plain object to encode
          * @param [writer] Writer to encode to
@@ -930,6 +1062,13 @@ declare namespace doomsday_pt {
 
         /** Pt_HeroPanel heroname. */
         public heroname: string;
+
+        /**
+         * Creates a new Pt_HeroPanel instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_HeroPanel instance
+         */
+        public static create(properties?: doomsday_pt.IPt_HeroPanel): doomsday_pt.Pt_HeroPanel;
 
         /**
          * Encodes the specified Pt_HeroPanel message. Does not implicitly {@link doomsday_pt.Pt_HeroPanel.verify|verify} messages.
@@ -994,6 +1133,13 @@ declare namespace doomsday_pt {
         public grade: number;
 
         /**
+         * Creates a new Pt_HeroInfo instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_HeroInfo instance
+         */
+        public static create(properties?: doomsday_pt.IPt_HeroInfo): doomsday_pt.Pt_HeroInfo;
+
+        /**
          * Encodes the specified Pt_HeroInfo message. Does not implicitly {@link doomsday_pt.Pt_HeroInfo.verify|verify} messages.
          * @param message Pt_HeroInfo message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1030,6 +1176,13 @@ declare namespace doomsday_pt {
 
         /** Cs_10020001 hero_id. */
         public hero_id: (number|Long);
+
+        /**
+         * Creates a new Cs_10020001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10020001 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10020001): doomsday_pt.Cs_10020001;
 
         /**
          * Encodes the specified Cs_10020001 message. Does not implicitly {@link doomsday_pt.Cs_10020001.verify|verify} messages.
@@ -1070,6 +1223,13 @@ declare namespace doomsday_pt {
         public att_list: doomsday_pt.IPt_AttList[];
 
         /**
+         * Creates a new Sc_10020001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10020001 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10020001): doomsday_pt.Sc_10020001;
+
+        /**
          * Encodes the specified Sc_10020001 message. Does not implicitly {@link doomsday_pt.Sc_10020001.verify|verify} messages.
          * @param message Sc_10020001 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1106,6 +1266,13 @@ declare namespace doomsday_pt {
 
         /** Cs_10020002 hero_id. */
         public hero_id: (number|Long);
+
+        /**
+         * Creates a new Cs_10020002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10020002 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10020002): doomsday_pt.Cs_10020002;
 
         /**
          * Encodes the specified Cs_10020002 message. Does not implicitly {@link doomsday_pt.Cs_10020002.verify|verify} messages.
@@ -1152,6 +1319,13 @@ declare namespace doomsday_pt {
         public att_list: doomsday_pt.IPt_AttList[];
 
         /**
+         * Creates a new Sc_10020002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10020002 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10020002): doomsday_pt.Sc_10020002;
+
+        /**
          * Encodes the specified Sc_10020002 message. Does not implicitly {@link doomsday_pt.Sc_10020002.verify|verify} messages.
          * @param message Sc_10020002 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1188,6 +1362,13 @@ declare namespace doomsday_pt {
 
         /** Cs_10020003 rand. */
         public rand: number;
+
+        /**
+         * Creates a new Cs_10020003 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10020003 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10020003): doomsday_pt.Cs_10020003;
 
         /**
          * Encodes the specified Cs_10020003 message. Does not implicitly {@link doomsday_pt.Cs_10020003.verify|verify} messages.
@@ -1234,6 +1415,13 @@ declare namespace doomsday_pt {
         public hero_list: doomsday_pt.IPt_HeroInfo[];
 
         /**
+         * Creates a new Sc_10020003 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10020003 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10020003): doomsday_pt.Sc_10020003;
+
+        /**
          * Encodes the specified Sc_10020003 message. Does not implicitly {@link doomsday_pt.Sc_10020003.verify|verify} messages.
          * @param message Sc_10020003 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1270,6 +1458,13 @@ declare namespace doomsday_pt {
 
         /** Cs_10020004 hero_id. */
         public hero_id: (number|Long);
+
+        /**
+         * Creates a new Cs_10020004 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10020004 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10020004): doomsday_pt.Cs_10020004;
 
         /**
          * Encodes the specified Cs_10020004 message. Does not implicitly {@link doomsday_pt.Cs_10020004.verify|verify} messages.
@@ -1314,6 +1509,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10020004 hero_info. */
         public hero_info: doomsday_pt.IPt_HeroInfo;
+
+        /**
+         * Creates a new Sc_10020004 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10020004 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10020004): doomsday_pt.Sc_10020004;
 
         /**
          * Encodes the specified Sc_10020004 message. Does not implicitly {@link doomsday_pt.Sc_10020004.verify|verify} messages.
@@ -1372,6 +1574,13 @@ declare namespace doomsday_pt {
         public valid_time: number;
 
         /**
+         * Creates a new Pt_GoodsMsg instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_GoodsMsg instance
+         */
+        public static create(properties?: doomsday_pt.IPt_GoodsMsg): doomsday_pt.Pt_GoodsMsg;
+
+        /**
          * Encodes the specified Pt_GoodsMsg message. Does not implicitly {@link doomsday_pt.Pt_GoodsMsg.verify|verify} messages.
          * @param message Pt_GoodsMsg message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1422,6 +1631,13 @@ declare namespace doomsday_pt {
         public entrepot_msg: doomsday_pt.IPt_GoodsMsg[];
 
         /**
+         * Creates a new Sc_10030001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10030001 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10030001): doomsday_pt.Sc_10030001;
+
+        /**
          * Encodes the specified Sc_10030001 message. Does not implicitly {@link doomsday_pt.Sc_10030001.verify|verify} messages.
          * @param message Sc_10030001 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1464,6 +1680,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10030002 goods_msg. */
         public goods_msg: doomsday_pt.IPt_GoodsMsg[];
+
+        /**
+         * Creates a new Sc_10030002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10030002 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10030002): doomsday_pt.Sc_10030002;
 
         /**
          * Encodes the specified Sc_10030002 message. Does not implicitly {@link doomsday_pt.Sc_10030002.verify|verify} messages.
@@ -1510,6 +1733,13 @@ declare namespace doomsday_pt {
         public num: number;
 
         /**
+         * Creates a new Cs_10030003 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10030003 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10030003): doomsday_pt.Cs_10030003;
+
+        /**
          * Encodes the specified Cs_10030003 message. Does not implicitly {@link doomsday_pt.Cs_10030003.verify|verify} messages.
          * @param message Cs_10030003 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1546,6 +1776,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10030003 res. */
         public res: doomsday_pt.IResData;
+
+        /**
+         * Creates a new Sc_10030003 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10030003 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10030003): doomsday_pt.Sc_10030003;
 
         /**
          * Encodes the specified Sc_10030003 message. Does not implicitly {@link doomsday_pt.Sc_10030003.verify|verify} messages.
@@ -1586,6 +1823,13 @@ declare namespace doomsday_pt {
         public id: (number|Long);
 
         /**
+         * Creates a new Cs_10030004 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10030004 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10030004): doomsday_pt.Cs_10030004;
+
+        /**
          * Encodes the specified Cs_10030004 message. Does not implicitly {@link doomsday_pt.Cs_10030004.verify|verify} messages.
          * @param message Cs_10030004 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1622,6 +1866,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10030004 res. */
         public res: doomsday_pt.IResData;
+
+        /**
+         * Creates a new Sc_10030004 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10030004 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10030004): doomsday_pt.Sc_10030004;
 
         /**
          * Encodes the specified Sc_10030004 message. Does not implicitly {@link doomsday_pt.Sc_10030004.verify|verify} messages.
@@ -1662,6 +1913,13 @@ declare namespace doomsday_pt {
         public id: number;
 
         /**
+         * Creates a new Cs_10030005 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10030005 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10030005): doomsday_pt.Cs_10030005;
+
+        /**
          * Encodes the specified Cs_10030005 message. Does not implicitly {@link doomsday_pt.Cs_10030005.verify|verify} messages.
          * @param message Cs_10030005 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1698,6 +1956,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10030005 res. */
         public res: doomsday_pt.IResData;
+
+        /**
+         * Creates a new Sc_10030005 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10030005 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10030005): doomsday_pt.Sc_10030005;
 
         /**
          * Encodes the specified Sc_10030005 message. Does not implicitly {@link doomsday_pt.Sc_10030005.verify|verify} messages.
@@ -1738,6 +2003,13 @@ declare namespace doomsday_pt {
         public id: (number|Long);
 
         /**
+         * Creates a new Cs_10030006 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10030006 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10030006): doomsday_pt.Cs_10030006;
+
+        /**
          * Encodes the specified Cs_10030006 message. Does not implicitly {@link doomsday_pt.Cs_10030006.verify|verify} messages.
          * @param message Cs_10030006 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1774,6 +2046,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10030006 res. */
         public res: doomsday_pt.IResData;
+
+        /**
+         * Creates a new Sc_10030006 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10030006 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10030006): doomsday_pt.Sc_10030006;
 
         /**
          * Encodes the specified Sc_10030006 message. Does not implicitly {@link doomsday_pt.Sc_10030006.verify|verify} messages.
@@ -1826,6 +2105,13 @@ declare namespace doomsday_pt {
         public select_id: number;
 
         /**
+         * Creates a new Cs_10030007 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10030007 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10030007): doomsday_pt.Cs_10030007;
+
+        /**
          * Encodes the specified Cs_10030007 message. Does not implicitly {@link doomsday_pt.Cs_10030007.verify|verify} messages.
          * @param message Cs_10030007 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1862,6 +2148,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10030007 res. */
         public res: doomsday_pt.IResData;
+
+        /**
+         * Creates a new Sc_10030007 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10030007 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10030007): doomsday_pt.Sc_10030007;
 
         /**
          * Encodes the specified Sc_10030007 message. Does not implicitly {@link doomsday_pt.Sc_10030007.verify|verify} messages.
@@ -1908,6 +2201,13 @@ declare namespace doomsday_pt {
         public y: number;
 
         /**
+         * Creates a new Pt_Pos instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_Pos instance
+         */
+        public static create(properties?: doomsday_pt.IPt_Pos): doomsday_pt.Pt_Pos;
+
+        /**
          * Encodes the specified Pt_Pos message. Does not implicitly {@link doomsday_pt.Pt_Pos.verify|verify} messages.
          * @param message Pt_Pos message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1946,6 +2246,13 @@ declare namespace doomsday_pt {
         public id: number;
 
         /**
+         * Creates a new Cs_10040001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10040001 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10040001): doomsday_pt.Cs_10040001;
+
+        /**
          * Encodes the specified Cs_10040001 message. Does not implicitly {@link doomsday_pt.Cs_10040001.verify|verify} messages.
          * @param message Cs_10040001 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -1982,6 +2289,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10040001 id_list. */
         public id_list: number[];
+
+        /**
+         * Creates a new Sc_10040001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10040001 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10040001): doomsday_pt.Sc_10040001;
 
         /**
          * Encodes the specified Sc_10040001 message. Does not implicitly {@link doomsday_pt.Sc_10040001.verify|verify} messages.
@@ -2028,6 +2342,13 @@ declare namespace doomsday_pt {
         public tar_id: number;
 
         /**
+         * Creates a new Cs_10040002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10040002 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10040002): doomsday_pt.Cs_10040002;
+
+        /**
          * Encodes the specified Cs_10040002 message. Does not implicitly {@link doomsday_pt.Cs_10040002.verify|verify} messages.
          * @param message Cs_10040002 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -2064,6 +2385,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10040002 tar_pos. */
         public tar_pos?: (doomsday_pt.IPt_Pos|null);
+
+        /**
+         * Creates a new Sc_10040002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10040002 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10040002): doomsday_pt.Sc_10040002;
 
         /**
          * Encodes the specified Sc_10040002 message. Does not implicitly {@link doomsday_pt.Sc_10040002.verify|verify} messages.
@@ -2110,6 +2438,13 @@ declare namespace doomsday_pt {
         public goods_bought: number;
 
         /**
+         * Creates a new Pt_GoodsList instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_GoodsList instance
+         */
+        public static create(properties?: doomsday_pt.IPt_GoodsList): doomsday_pt.Pt_GoodsList;
+
+        /**
          * Encodes the specified Pt_GoodsList message. Does not implicitly {@link doomsday_pt.Pt_GoodsList.verify|verify} messages.
          * @param message Pt_GoodsList message or plain object to encode
          * @param [writer] Writer to encode to
@@ -2152,6 +2487,13 @@ declare namespace doomsday_pt {
 
         /** Pt_Goodsfresh goods_num. */
         public goods_num: number;
+
+        /**
+         * Creates a new Pt_Goodsfresh instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Pt_Goodsfresh instance
+         */
+        public static create(properties?: doomsday_pt.IPt_Goodsfresh): doomsday_pt.Pt_Goodsfresh;
 
         /**
          * Encodes the specified Pt_Goodsfresh message. Does not implicitly {@link doomsday_pt.Pt_Goodsfresh.verify|verify} messages.
@@ -2198,6 +2540,13 @@ declare namespace doomsday_pt {
         public shop_lv: number;
 
         /**
+         * Creates a new Cs_10050001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10050001 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10050001): doomsday_pt.Cs_10050001;
+
+        /**
          * Encodes the specified Cs_10050001 message. Does not implicitly {@link doomsday_pt.Cs_10050001.verify|verify} messages.
          * @param message Cs_10050001 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -2240,6 +2589,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10050001 goods_fresh. */
         public goods_fresh: doomsday_pt.IPt_Goodsfresh;
+
+        /**
+         * Creates a new Sc_10050001 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10050001 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10050001): doomsday_pt.Sc_10050001;
 
         /**
          * Encodes the specified Sc_10050001 message. Does not implicitly {@link doomsday_pt.Sc_10050001.verify|verify} messages.
@@ -2292,6 +2648,13 @@ declare namespace doomsday_pt {
         public goods_id: number;
 
         /**
+         * Creates a new Cs_10050002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10050002 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10050002): doomsday_pt.Cs_10050002;
+
+        /**
          * Encodes the specified Cs_10050002 message. Does not implicitly {@link doomsday_pt.Cs_10050002.verify|verify} messages.
          * @param message Cs_10050002 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -2334,6 +2697,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10050002 goods_list. */
         public goods_list: doomsday_pt.IPt_GoodsList;
+
+        /**
+         * Creates a new Sc_10050002 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10050002 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10050002): doomsday_pt.Sc_10050002;
 
         /**
          * Encodes the specified Sc_10050002 message. Does not implicitly {@link doomsday_pt.Sc_10050002.verify|verify} messages.
@@ -2386,6 +2756,13 @@ declare namespace doomsday_pt {
         public fresh_goodsid: number;
 
         /**
+         * Creates a new Cs_10050003 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Cs_10050003 instance
+         */
+        public static create(properties?: doomsday_pt.ICs_10050003): doomsday_pt.Cs_10050003;
+
+        /**
          * Encodes the specified Cs_10050003 message. Does not implicitly {@link doomsday_pt.Cs_10050003.verify|verify} messages.
          * @param message Cs_10050003 message or plain object to encode
          * @param [writer] Writer to encode to
@@ -2428,6 +2805,13 @@ declare namespace doomsday_pt {
 
         /** Sc_10050003 goods_list. */
         public goods_list: doomsday_pt.IPt_GoodsList[];
+
+        /**
+         * Creates a new Sc_10050003 instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns Sc_10050003 instance
+         */
+        public static create(properties?: doomsday_pt.ISc_10050003): doomsday_pt.Sc_10050003;
 
         /**
          * Encodes the specified Sc_10050003 message. Does not implicitly {@link doomsday_pt.Sc_10050003.verify|verify} messages.
