@@ -57,7 +57,7 @@ program
 });
 program.parse(process.argv);
 function resolve(name) {
-    return path.resolve(__dirname, name);
+    return path.resolve(name);
 }
 function build(target) {
     return __awaiter(this, void 0, void 0, function () {

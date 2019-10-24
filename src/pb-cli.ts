@@ -14,7 +14,7 @@ if (fs.existsSync(path.resolve('pb.config.js'))) {
 }
 
 program
-    .version('1.0.2', '-v, --version')
+    .version('1.0.3', '-v, --version')
 
 program
     .command('build <target>')
@@ -27,7 +27,7 @@ program
 program.parse(process.argv);
 
 function resolve(name: string) {
-    return path.resolve(__dirname, name);
+    return path.resolve(name);
 }
 
 async function build(target: string) {

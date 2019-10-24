@@ -1,6 +1,6 @@
 {
   "name": "pbts-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "导出pbjs和pbts文件",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "tsc && pbts-cli build sample/",
+    "test": "tsc && bin/pb-cli.js build sample",
     "build": "tsc"
   },
   "repository": {
